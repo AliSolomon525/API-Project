@@ -1,0 +1,12 @@
+.card {
+    display: flexbox;
+    flex-wrap:wrap;
+    width: 50%;
+    margin-left: 1em;
+    text-align: center;
+}
+
+.cs {
+    float:left;
+    padding-right: 1em;
+}
