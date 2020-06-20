@@ -5,7 +5,7 @@ body {
 .navbar {
     text-align: center;
     font-family: "Courier New", Courier, monospace;
-    font-size:20px;
+    font-size:18px;
     width:50%;
     background-color:#e6d4a5;
 }
@@ -16,8 +16,8 @@ body {
     border: solid 4px #8b0000;
     /* width:30%; */
     margin:auto;
-    margin-top:0.5em;
-    margin-bottom:0.5em;
+    /* margin-top:0.5em;
+    margin-bottom:0.5em; */
     border-radius:0.3em;
 }
 
@@ -43,7 +43,7 @@ body {
     height: 100%;
     position: fixed;
     left: 50%;
-    margin-left: 7em;
+    margin-left: 5em;
     top: 0;
 }
 
@@ -53,6 +53,7 @@ body {
 }
 
 .card1 {
+    margin-left:0.8em;
     /* flex-wrap:wrap; */
     width: 50%;
     /* margin-left: 0.5em; */
@@ -72,10 +73,21 @@ body {
     float:right;
     margin-right:10em;
     border:1px solid black;
-    width:15em;
+    width:16em;
     background-color:white;
     transform:rotate(10deg);
     box-shadow: 2px 2px 4px black;
+    border-radius:3px;
+}
+
+.tack{
+    z-index:1;
+    width:8px;
+    height:8px;
+    background: #77dab2;
+    border-radius: 50%;
+    float:right;
+    margin-right:-10em;
 }
 
 .btn {
@@ -98,6 +110,7 @@ body {
 }
 
 .card2 {
+    margin-left:1em;
      /* flex-wrap:wrap; */
      margin-top: 1em;
      width: 50%;
@@ -115,4 +128,60 @@ body {
     font-size:20px;
     text-align: center;
     text-decoration:none;
+}
+
+.card3 {
+    margin-left:1em;
+     /* flex-wrap:wrap; */
+     margin-top: 1em;
+     width: 50%;
+     /* margin-right: 1em; */
+     text-align: left;
+     font-family: "Courier New", Courier, monospace;
+     font-size:16px;
+     border: double 4px #cc0000;
+     background-color: white;
+     /* padding-left:0.5em; */
+}
+
+@media screen 
+  and (max-device-width: 700px) {
+    #cs{
+        display:flex;
+        flex-wrap:wrap;
+        margin-right:10em;
+        float:right;
+        border:1px solid black;
+        width:16em;
+        background-color:white;
+        transform:rotate(10deg);
+        box-shadow: 2px 2px 4px black;}
+}
+
+@media screen 
+  and (max-device-width: 650px) {
+    #cs{
+        display:flex;
+        flex-wrap:wrap;
+        margin-right:10em;
+        float:right;
+        border:1px solid black;
+        width:10em;
+        background-color:white;
+        transform:rotate(10deg);
+        box-shadow: 2px 2px 4px black;}
+}
+
+@media screen 
+  and (max-device-width: 550px) {
+    #cs{
+        display:flex;
+        flex-wrap:wrap;
+        margin-right:10em;
+        float:right;
+        border:1px solid black;
+        width:5em;
+        background-color:white;
+        transform:rotate(10deg);
+        box-shadow: 2px 2px 4px black;}
 }
