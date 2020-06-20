@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href=./index.css>
+    <title>Carmen Sandiego API</title>
+</head>
+<body>
+<!--NAVBAR-->
+  <nav class="navbar">
+    <div class="title-container">
+        <h1 class="ts"><b>TOP SECRET</b></h1>
+    </div>
+  </nav>
+<hr>
+  <!--PHOTO-->
+  <div class="container-fluid">
+    <div class="row">
+
+      <div class="vl"></div>
+      <div class="col-auto mb-3"></div>
+      <div class="col-auto mb-3">
+        <img src="./images/Capture.PNG" id="cs">
+      </div>
+
+      <!--CARD 1-->
+    
+      <div class="col-auto mb-3">
+        <div class="card1">
+          <div class="card-body">
+            <h2 class="card-title">Where in the World is Carmen Sandiego?</h2>
+            <button type=submit class="btn"><b>Find Out!</button>
+            <p class="card-text"></p> 
+          </div>
+        </div>
+      
+      <!--CARD 2-->   
+
+      <div class="card2">
+        <div class="card-body">
+          <h2 class="card2-title"><b>Carmen Sandiego Profile</b></h2>
+          <ol>
+            <li>Legal Name: Carmen Isabella Sandiego</li>
+            <li>Birthplace: San Francisco, CA</li>
+            <li>Date of Birth: March 1, 1968</li>
+            <li>Former Occupation: ACME Detective</li>
+            <li>Current Occupation: Wanted Criminal Mastermind</li>
+          </ol>
+          <p class="card-text"></p> 
+        </div>
+      </div>
+    </div>
+
+    <div class="card2">
+      <div class="card-body">
+        <h2 class="card3-title"><b>Oh No! Carmen was just seen fleeing her last location!</b></h2>
+        <p class="card-text" style="text-align:center">Click the button again to find out where she's headed!</p> 
+      </div>
+    </div>
+  
+    </div>
+    </div>
+  </div>
+    
+
+
+
+<!--FIREBASE-->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCYbQTC4g8E10ias_enA9FnshIcFGzPtuw",
+    authDomain: "as-csandiego-api.firebaseapp.com",
+    databaseURL: "https://as-csandiego-api.firebaseio.com",
+    projectId: "as-csandiego-api",
+    storageBucket: "as-csandiego-api.appspot.com",
+    messagingSenderId: "433974969052",
+    appId: "1:433974969052:web:b6f63654e9399d2082aa19",
+    measurementId: "G-YZYWF45DX6"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  </script>
+
+<script src="index.js"></script>
+
+ 
+</body>
+</html>
+
+
+
+
